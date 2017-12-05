@@ -1,0 +1,5 @@
+1、下载安装程序，默认选项安装
+2、打开 Git Bash
+3、输入如下内容
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
