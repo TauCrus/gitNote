@@ -65,6 +65,11 @@ git branch -d <name>
 git log --graph --pretty=oneline --abbrev-commit
 --查看分支图
 
+git fetch <host> <远程分支名>:<本地分支名>
+--相当于是从远程获取最新版本到本地，不会自动合并。
+
+git pull <host> <远程分支名>:<本地分支名>
+--获取远程仓库的最新版本并merge到本地，相当于git fetch 和 git merge
 
 
 
