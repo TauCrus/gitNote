@@ -39,8 +39,6 @@ git push -u origin master
 git clone git@server-name:path/repo-name.git
 --克隆仓库，注意：除了默认的git协议，还可以使用https协议等其他协议
 
---这里有东西
-
 
 -- 分支管理
 
@@ -72,6 +70,14 @@ git pull <host> <远程分支名>:<本地分支名>
 --获取远程仓库的最新版本并merge到本地，相当于git fetch 和 git merge
 
 
+git stash
+--储存
+
+git stash list
+--查看储存的stash
+
+git stash pop
+--恢复储存同时把stash的内容删除，相当于git stash apply 恢复储存 加 git stash drop删除
 
 --标签管理
 
