@@ -1,0 +1,97 @@
+git add <file>  
+--请文件添加到暂存区,可多次添加
+
+git commit -m"备注"  
+--提交暂存区文件
+
+git status 	
+--查看仓库当前状态
+
+git diff
+--查看文件差异
+
+git log
+--查看提交日志
+
+git reset --hard HEAD^ / commit_id
+--回退版本，HEAD表示最新版，HEAD^代表上一个版本. 
+--git reset 既可以回退版本，也可以把暂存区的修改回退到工作区
+
+git reflog
+--查看命令历史
+
+git checkout -- <file>
+--撤销修改，如果没有 -- 就会变成切换到另一个分支的指令
+
+git rm <file>
+--删除文件，删除完需要提交
+
+
+
+
+git remote add origin git@server-name:path/repo-name.git
+--管理远程库
+
+git push -u origin master
+--第一次提交的时候推送的时候加上，以后可以省略成git push origin master
+
+git clone git@server-name:path/repo-name.git
+--克隆仓库，注意：除了默认的git协议，还可以使用https协议等其他协议
+
+
+
+
+
+git branch
+--查看分支
+
+git branch <name>
+--创建分支
+
+git checkout <name>
+--切换分支
+
+git checkout -b <name>
+--创建并切换分支
+
+git merge <name>
+--合并某分支到当前分支
+
+git branch -d <name>
+--删除分支
+
+git log --graph --pretty=oneline --abbrev-commit
+--查看分支图
+
+
+
+git tag <name>
+--创建一个标签
+
+git tag -a <tagname> -m "description"
+--创建指定标签信息
+
+git tag -s <tagname> -m "description"
+--创建PGP签名的标签
+
+git tag
+--查看所有标签
+
+git show <tagname>
+--查看指定标签信息
+
+
+git push origin <tagname>
+--推送一个本地标签
+
+git push origin --tags
+--可以推送所有本地标签
+
+git tag -d <tagname>
+--可以删除一个本地标签
+
+git push origin :refs/tags/<tagname>
+--可以删除一个远程标签
+
+
+--当需要忽略某些文件时，需要编写.gitignore
