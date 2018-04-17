@@ -1,4 +1,4 @@
--- 基本操作
+﻿-- 基本操作
 git add <file>  
 --请文件添加到暂存区,可多次添加
 
@@ -35,6 +35,7 @@ git remote add origin git@server-name:path/repo-name.git
 
 git push -u origin master
 --第一次提交的时候推送的时候加上，以后可以省略成git push origin master
+--git push是<本地分支>:<远程分支>
 
 git clone git@server-name:path/repo-name.git
 --克隆仓库，注意：除了默认的git协议，还可以使用https协议等其他协议
@@ -69,6 +70,7 @@ git fetch <host> <远程分支名>:<本地分支名>
 
 git pull <host> <远程分支名>:<本地分支名>
 --获取远程仓库的最新版本并merge到本地，相当于git fetch 和 git merge
+--git pull是<远程分支>:<本地分支>
 
 
 git stash

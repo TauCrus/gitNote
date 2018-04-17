@@ -1,4 +1,4 @@
-1、cd --切换当前目录，可以说绝对路径也可以是相对路径
+﻿1、cd --切换当前目录，可以说绝对路径也可以是相对路径
 
 2、ls  --查看文件和目录，常用参数如下（可以组合）
 
@@ -34,6 +34,7 @@
 
 15、chown --修改所有者  
 	chown -R chenqq /data/chenqq
+	chown -R chenqq:chenqq server.go
 
 16、chmod --修改授权
 
@@ -44,3 +45,9 @@
 19、gcc
 
 20、time
+
+21、crontab
+/var/spool/cron/crontab/ 文件夹下
+
+minute   hour   day   month   week   command
+每分钟执行： * * * * * command
